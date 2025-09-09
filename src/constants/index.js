@@ -1,38 +1,38 @@
 const navLinks = [
   {
-    name: "Work",
+    name: "Projets",
     link: "#work",
   },
   {
-    name: "Experience",
+    name: "Expérience",
     link: "#experience",
   },
   {
-    name: "Skills",
+    name: "Compétences",
     link: "#skills",
   },
   {
-    name: "Testimonials",
+    name: "Avis",
     link: "#testimonials",
   },
 ];
 
 const words = [
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
+  { text: "Idées", imgPath: "/images/ideas.svg" },
   { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
+  { text: "Maquettes", imgPath: "/images/designs.svg" },
   { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
+  { text: "Idées", imgPath: "/images/ideas.svg" },
   { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
+  { text: "Maquettes", imgPath: "/images/designs.svg" },
   { text: "Code", imgPath: "/images/code.svg" },
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 15, suffix: "+", label: "Années d'expérience" },
+  { value: 200, suffix: "+", label: "Clients satisfaits" },
+  { value: 108, suffix: "+", label: "Projets réalisés" },
+  { value: 90, suffix: "%", label: "Taux de fidélisation" },
 ];
 
 const logoIconsList = [
@@ -74,71 +74,71 @@ const logoIconsList = [
 const abilities = [
   {
     imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    title: "Sens de la qualité",
+    desc: "Des résultats de haute qualité avec une attention à chaque détail.",
   },
   {
     imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    title: "Communication fiable",
+    desc: "Des mises à jour à chaque étape pour garantir transparence et clarté.",
   },
   {
     imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    title: "Livraison ponctuelle",
+    desc: "Des projets livrés dans les délais, avec qualité et exigence.",
   },
 ];
 
 const techStackImgs = [
   {
-    name: "React Developer",
+    name: "Développeur React",
     imgPath: "/images/logos/react.png",
   },
   {
-    name: "Python Developer",
+    name: "Développeur Python",
     imgPath: "/images/logos/python.svg",
   },
   {
-    name: "Backend Developer",
+    name: "Développeur Backend",
     imgPath: "/images/logos/node.png",
   },
   {
-    name: "Interactive Developer",
+    name: "Développeur Interactif",
     imgPath: "/images/logos/three.png",
   },
   {
-    name: "Project Manager",
+    name: "Chef de projet",
     imgPath: "/images/logos/git.svg",
   },
 ];
 
 const techStackIcons = [
   {
-    name: "React Developer",
+    name: "Développeur React",
     modelPath: "/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
-    name: "Python Developer",
+    name: "Développeur Python",
     modelPath: "/models/python-transformed.glb",
     scale: 0.8,
     rotation: [0, 0, 0],
   },
   {
-    name: "Backend Developer",
+    name: "Développeur Backend",
     modelPath: "/models/node-transformed.glb",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
-    name: "Interactive Developer",
+    name: "Développeur Interactif",
     modelPath: "/models/three.js-transformed.glb",
     scale: 0.05,
     rotation: [0, 0, 0],
   },
   {
-    name: "Project Manager",
+    name: "Chef de projet",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
@@ -147,39 +147,42 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    review:
+      "Adrian a apporté créativité et expertise technique à l'équipe, améliorant nettement nos performances frontend. Son travail a été précieux pour offrir des expériences plus rapides.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    title: "Développeur Frontend",
+    date: "Janvier 2023 - Présent",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Développer et maintenir des fonctionnalités orientées utilisateur pour le site Hostinger.",
+      "Collaborer étroitement avec les designers UI/UX pour des expériences fluides.",
+      "Optimiser les applications web pour la vitesse et l'évolutivité.",
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    review:
+      "Les contributions d’Adrian aux applications web de Docker ont été remarquables. Il aborde les défis avec un véritable esprit de résolution de problèmes.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    title: "Développeur Full‑Stack",
+    date: "Juin 2020 - Décembre 2023",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Piloter le développement des applications web de Docker en mettant l’accent sur l’évolutivité.",
+      "Travailler avec les équipes backend pour intégrer les API de manière fluide avec le frontend.",
+      "Contribuer à des projets open‑source utilisés dans l’écosystème Docker.",
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    review:
+      "Le travail d’Adrian sur l’application mobile d’Appwrite a apporté un haut niveau de qualité et d’efficacité. Il a livré des solutions qui ont amélioré notre expérience mobile et atteint nos objectifs produit.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    title: "Développeur React Native",
+    date: "Mars 2019 - Mai 2020",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Concevoir des applications mobiles multi‑plateformes avec React Native, intégrées aux services backend d’Appwrite.",
+      "Améliorer les performances et l’UX via optimisation du code et tests.",
+      "Coordonner avec l’équipe produit pour implémenter des fonctionnalités selon les retours.",
     ],
   },
 ];
@@ -204,42 +207,42 @@ const testimonials = [
     name: "Esther Howard",
     mentions: "@estherhoward",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "Je n’ai que des éloges pour Adrian. Il a su transformer des exigences complexes en un site fluide et fonctionnel. Ses capacités de résolution de problèmes sont remarquables.",
     imgPath: "/images/client1.png",
   },
   {
     name: "Wade Warren",
     mentions: "@wadewarren",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+      "Travailler avec Adrian fut une excellente expérience. Il a transformé notre site vieillissant en une plateforme moderne et agréable. Son sens du détail et son exigence de qualité sont incomparables. Je le recommande vivement pour tout projet web.",
     imgPath: "/images/client3.png",
   },
   {
     name: "Guy Hawkins",
     mentions: "@guyhawkins",
     review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborer avec Adrian a été un vrai plaisir. Son professionnalisme, sa réactivité et sa volonté de livrer des résultats d’exception ont été constants. Son enthousiasme pour chaque aspect du développement se démarque vraiment.",
     imgPath: "/images/client2.png",
   },
   {
     name: "Marvin McKinney",
     mentions: "@marvinmckinney",
     review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+      "C’était un plaisir de travailler avec Adrian. Il a rendu notre site obsolète moderne, intuitif et facile à naviguer. Excellent travail dans l’ensemble.",
     imgPath: "/images/client5.png",
   },
   {
     name: "Floyd Miles",
     mentions: "@floydmiles",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+      "L’expertise d’Adrian en développement web est impressionnante. Il a livré une solution robuste et scalable pour notre e‑commerce, et nos ventes en ligne ont fortement augmenté depuis le lancement. Un vrai pro !",
     imgPath: "/images/client4.png",
   },
   {
     name: "Albert Flores",
     mentions: "@albertflores",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+      "Adrian a été un partenaire de travail idéal. Il a parfaitement compris nos besoins et livré un site au‑delà de nos attentes. Ses compétences en frontend comme en backend sont de haut niveau.",
     imgPath: "/images/client6.png",
   },
 ];

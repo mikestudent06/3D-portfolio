@@ -5,6 +5,8 @@ import { navLinks } from "../constants";
 const NavBar = () => {
   // track if the user has scrolled down the page
   const [scrolled, setScrolled] = useState(false);
+  // track if mobile menu is open
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     // create an event listener for when the user scrolls
@@ -22,11 +24,21 @@ const NavBar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // close mobile menu when clicking on a link
+  const handleMobileLinkClick = () => {
+    setIsMobileMenuOpen(false);
+  };
+
+  // toggle mobile menu
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
       <div className="inner">
         <a href="#hero" className="logo">
-          mimo
+          michel mouhani
         </a>
 
         <nav className="desktop">
@@ -35,6 +47,7 @@ const NavBar = () => {
               <li key={name} className="group">
                 <a href={link}>
                   <span>{name}</span>
+                  <span className="vertical-line" />
                   <span className="underline" />
                 </a>
               </li>
@@ -44,12 +57,53 @@ const NavBar = () => {
 
         <a href="#contact" className="contact-btn group">
           <div className="inner">
-            <span>Contact me</span>
+            <span>Contactez‑moi</span>
           </div>
         </a>
+
+        {/* Mobile menu button */}
+        <button
+          className="mobile-menu-btn lg:hidden"
+          onClick={toggleMobileMenu}
+          aria-label="Toggle mobile menu"
+        >
+          <span
+            className={`hamburger-line ${isMobileMenuOpen ? "open" : ""}`}
+          ></span>
+          <span
+            className={`hamburger-line ${isMobileMenuOpen ? "open" : ""}`}
+          ></span>
+          <span
+            className={`hamburger-line ${isMobileMenuOpen ? "open" : ""}`}
+          ></span>
+        </button>
+      </div>
+
+      {/* Mobile menu overlay */}
+      <div className={`mobile-menu-overlay ${isMobileMenuOpen ? "open" : ""}`}>
+        <nav className="mobile-menu">
+          <ul>
+            {navLinks.map(({ link, name }) => (
+              <li key={name}>
+                <a href={link} onClick={handleMobileLinkClick}>
+                  {name}
+                </a>
+              </li>
+            ))}
+            <li>
+              <a
+                href="#contact"
+                onClick={handleMobileLinkClick}
+                className="mobile-contact-btn"
+              >
+                Contactez‑moi
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
   );
-}
+};
 
 export default NavBar;

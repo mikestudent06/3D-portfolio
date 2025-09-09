@@ -12,7 +12,8 @@ import Navbar from "./components/NavBar";
 const App = () => (
   <>
     <Navbar />
-    {/* <Hero />
+    <Hero />
+    {/*
     <ShowcaseSection />
     <LogoShowcase />
     <FeatureCards />
@@ -20,7 +21,7 @@ const App = () => (
     <TechStack />
     <Testimonials />
     <Contact />
-    <Footer /> */}
+    <Footer />  */}
   </>
 );
 

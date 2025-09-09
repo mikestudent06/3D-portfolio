@@ -49,16 +49,16 @@ const AppShowcase = () => {
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper">
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryde App Interface" />
+              <img src="/images/project1.png" alt="Interface de l’app Ryde" />
             </div>
             <div className="text-content">
               <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
+                Des trajets à la demande simplifiés avec une application
+                puissante et intuitive appelée Ryde
               </h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
+                Une application conçue avec React Native, Expo et TailwindCSS
+                pour une expérience rapide et fluide.
               </p>
             </div>
           </div>
@@ -68,17 +68,20 @@ const AppShowcase = () => {
               <div className="image-wrapper bg-[#FFEFDB]">
                 <img
                   src="/images/project2.png"
-                  alt="Library Management Platform"
+                  alt="Plateforme de gestion de bibliothèque"
                 />
               </div>
-              <h2>The Library Management Platform</h2>
+              <h2>Plateforme de gestion de bibliothèque</h2>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
+                <img
+                  src="/images/project3.png"
+                  alt="Application YC Directory"
+                />
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+              <h2>YC Directory – application vitrine de startups</h2>
             </div>
           </div>
         </div>

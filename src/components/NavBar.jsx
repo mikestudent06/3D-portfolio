@@ -38,7 +38,8 @@ const NavBar = () => {
     <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
       <div className="inner">
         <a href="#hero" className="logo">
-          michel mouhani
+          <span className="text-amber-600 font-bold">m</span>ichel{" "}
+          <span className="text-blue-50 font-bold">m</span>ouhani
         </a>
 
         <nav className="desktop">
@@ -48,7 +49,7 @@ const NavBar = () => {
                 <a href={link}>
                   <span>{name}</span>
                   <span className="vertical-line" />
-                  <span className="underline" />
+                  {/* <span className="underline" /> */}
                 </a>
               </li>
             ))}

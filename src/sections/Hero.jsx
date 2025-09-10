@@ -10,8 +10,8 @@ const Hero = () => {
   useGSAP(() => {
     gsap.fromTo(
       ".hero-text h1",
-      { y: 50, opacity: 0 },
-      { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" }
+      { x: -50, opacity: 0 },
+      { x: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" }
     );
   });
 
@@ -26,7 +26,7 @@ const Hero = () => {
 
       <div className="hero-layout">
         {/* LEFT: Hero Content */}
-        <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
+        <header className="animated-header flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
           <div className="flex flex-col gap-7">
             <div className="hero-text">
               <h1>
@@ -54,8 +54,8 @@ const Hero = () => {
             </div>
 
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Bonjour, je suis Michel, développeur basé au Congo Brazzaville,
-              passionné de code.
+              Bonjour, je suis Michel, développeur web basé au Congo
+              Brazzaville, passionné de technologie.
             </p>
 
             <Button

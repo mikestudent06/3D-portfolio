@@ -13,7 +13,7 @@ const App = () => (
   <>
     <Navbar />
     <Hero />
-    {/*
+
     <ShowcaseSection />
     <LogoShowcase />
     <FeatureCards />
@@ -21,7 +21,7 @@ const App = () => (
     <TechStack />
     <Testimonials />
     <Contact />
-    <Footer />  */}
+    <Footer />
   </>
 );
 
